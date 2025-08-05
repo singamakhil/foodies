@@ -1,8 +1,8 @@
-export default function MealDetailsPage({ params }) {
+export default async function MealDetailsPage({ params }) {
   return (
     <div>
       <h1>Meal</h1>
-      <p>your meal is {params.smug}</p>
+      <p>your meal is {await params.smug}</p>
     </div>
   );
 }
